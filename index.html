@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="headTop">
+            <div class="headerText">
+                <p><a href="index.html">100+ NEW MARKDOWNS ADDED! UP TO 500% OFF ALL SALES! SHOP NOW</a></p>
+            </div>
+        </div>
+    </header>
+
+     <main>
+        <div class="container">
+            <div class="img">
+                <img class="myPhoto" src="img/myphoto.png" id="pphoto">
+            </div>
+            <div class="content">
+                <div class="description">
+                    <p> Boys Stillwater Sherpa 1/4-Zip </p>
+                </div>
+                <div class="more">
+                    <p>Available in More Sizes</p>
+                    <p class="price"> GHC 300.00 </p>
+                </div>
+                <div class="pcolor">
+                    <div class="prodColor">
+                        <span>Color: <span id="colorName"></span></span>
+                    </div>
+                    <div class="colorSelect">
+                        <div class="colorCircleOrange" onclick="selectOrange()" required></div>
+                        <div class="colorCirclePurple" onclick="selectPurple()" required></div>
+                    </div>
+                </div>
+                <div class="size">
+                    <p> <span> Size: </span> Please Select A Size</p>
+                    <div class="sizeBox">
+                        <form>
+                            <select id="sizes-available">
+                                <option value="XS">XS</option>
+                                <option value="S" selected="selected">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                              </select>
+                          </form>
+                    </div>
+                </div>
+                <div class="cartQuantity">
+                    <p>Quantity:</p>
+                    <i class="zmdi zmdi-minus-circle" onclick="subtract()"></i>
+                    <input type="number" name="" id="quantity" min="1" max="10.0" step="1.0" value="1">
+                    <i class="zmdi zmdi-plus-circle" onclick="add()"></i>
+                </div>
+                <div class="addToCart">
+                    <div class="add"><input type="button" value="ADD TO CART" onclick="addToCart()"></div>
+                    <div class="buy"><input type="button" value="Buy online, free in-store pickup"></div>
+                </div>
+        </div>
+    </main>
+    <div id="theSidecart" class="side-cart">
+        <a href="" class="btn-close" onclick="closeNav()">×</a>
+        <div class="upperPart">
+            <p>Items added to cart</p>
+        </div>
+        <div class="itemDesc">
+            <div class="subImage">
+                <img src="img/sma.jpg" alt="" id="subImage">
+            </div>
+            <div class="imgDesc">
+                <div class="desc">
+                    <p> Boys Stillwater Sherpa 1/4-Zip </p>
+                </div>
+                <span>Size: <span id="sizeSelected"></span></span>
+                <span>Qty: <span id="quantitySelected"></span></span>
+                <div class="moreInfo">
+                    <p class="price"> GHC 300.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="subTotal">
+            <span>Subtotal: GHC <span id="subtotal"></span></span>
+        </div>
+
+        <div class="checkout"><a href="checkout-cart.html">Checkout</a></div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

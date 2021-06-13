@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Checkout Page </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout-cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+</head>
+<body>
+    <header>
+        <div class="headTop">
+            <div class="headerText">
+                <p><a href="index.html">100+ NEW MARKDOWNS ADDED! UP TO 500% OFF ALL SALES! SHOP NOW</a></p>
+            </div>
+        </div>
+    </header>
+
+    <div class="section-cart">
+        <div class="real-cart" id="cartBag">
+            <div class="cart-header">
+                <div>Item</div>
+                <div>Item Description</div>
+                <div>Quantity</div>
+                <div>Unit Price</div>
+                <div>Total Price</div>
+                <div>Del</div>
+            </div>
+            <div class="cart-details" id="del-cart">
+                <div class="del"><img src="" alt="" id="checkoutImage"></div>
+                <div class="del" id="descrip"> 
+                    <p id="itemName"> Boys Stillwater Sherpa 1/4-Zip </p>
+                    <p>Color: <span id="color"></span></p>
+                    <p>Quantity: <span id="quantity"></span></p>
+                    <p>Size: <span id="size"></span></p>
+                </div>
+                <div class="del" id="quant">
+                    <input type="number" id="numberField" min="1" max="10.0" step="1.0" value="1">
+                    <input type="button" value="Update" onclick="updateQuantity()">
+                </div>
+                <div class="del" id="prices"> GHC 300.00 </div>
+                <div class="del"><span id="cartTotal"></span></div>
+                <div> <i class="zmdi zmdi-delete" onclick="deletecart()"></i> </div>
+                
+            </div>
+        </div>
+        
+
+        <div class="checkout-cart">
+            <div class="sum-order">
+                <p id="sumorder"> Order Summary </p>
+                <!-- <p>1 item in total</p> -->
+            </div>
+            <div class="cost">
+                <p>Subtotal: <span id="subtotal" class="value"></span></p>
+                <p>Your Discount: <span class="value" id="discount"></span></p>
+                <p>Your Total: <span id="total" class="value"></span></p>
+            </div>
+            <div class="coupon-area">
+                <input type="text" name="" id="coupon" maxlength="5" style="margin-bottom: 10px; border: 1px solid black; width: 15rem; height: 2rem; border-radius: 15px;">
+                <input type="button" style="margin-top:5px; height: 3rem; width: 15rem; background-color: rgb(0, 43, 92); color: white; border-radius: 15px;"value="Apply Coupon" onclick="discountCoupon()">
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+    <script src="cc.js"></script>
+    
+</body>
+</html>

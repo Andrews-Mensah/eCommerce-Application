@@ -1,0 +1,272 @@
+* {
+    margin-top: 0;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0 0.2rem;
+    font-family: sans-serif !important;
+    overflow: visible;
+}
+
+header {
+    width: 100%;
+    height: 5rem;
+}
+
+.headTop {
+    height: 2.5rem;
+    background-color: rgb(0, 43, 92);
+}
+
+.headerText {
+    font-size: 1rem;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.headerText p a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+main .container {
+    width: 90%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+main .container .img {
+    border: 3px gray solid;
+    width: 100%;
+    border-radius: 15px;
+    height: auto;
+}
+
+main .container .img img {
+    width: 100%;
+}
+.content {
+    margin: 0 2rem;
+}
+
+.description {
+    width: 100%;
+    height: 3rem;
+    padding-top: 1rem;
+    color: rgb(0, 43, 92);
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-size: 1.4rem;
+}
+
+.more {
+    margin: 0;
+}
+
+.more p {
+    color: rgb(0, 43, 92);
+    font-weight: bold;
+}
+
+.more .price {
+    margin-top: 1rem;
+}
+
+.more div {
+    font-size: 0.8rem;
+}
+
+
+.prodColor {
+    height: 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.color {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.colorSelect {
+    margin-top: 1rem;
+    height: 5rem;
+}
+
+.colorSelect:hover {
+    cursor: pointer;
+}
+
+
+.colorCircleOrange {
+    background-color: rgb(228, 169, 58);
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.colorCirclePurple {
+    background-color: rgb(218, 113, 218);
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.size {
+    display: inline;
+}
+
+.size .sizeBox {
+    width: 50%;
+    height: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+
+}
+
+.size .sizeBox select {
+    width: 5rem;
+    height: 2rem;
+}
+
+.size .sizeBox input:hover {
+    background-color: #0357b6;
+    color: white;
+}
+
+.size .sizeBox a {
+    text-decoration: none;
+    width: 100%;
+}
+
+.cartQuantity {
+    margin: 3rem 0;
+    height: 4rem;
+}
+
+.cartQuantity input {
+    width: 3rem;
+    height: 2rem;
+}
+
+.addToCart input {
+    width: 100%;
+    height: 100%;
+}
+
+.addToCart .add input {
+    height: 3rem;
+    width: 20rem;
+    margin-bottom: 1rem;
+    background-color: rgb(0, 43, 92);
+    color: white;
+    font-weight: bold;
+}
+
+.addToCart .buy input {
+    color: rgb(0, 43, 92);
+    height: 3rem;
+    width: 20rem;
+    margin-bottom: 1rem;
+}
+
+.side-cart {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0.3rem;
+    border: gray solid 0.01rem;
+
+}
+
+.side-cart .bnt-close {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: inline-block;
+    transition: 0.3s;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.side-cart .btn-close:hover {
+    color: #f1f1f1;
+}
+
+.side-cart .upperPart{
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+
+.side-cart .upperPart p {
+    text-align: center;
+    color: white;
+    background-color: rgb(0,43,92);
+    height: 100%;
+    padding: 1rem;
+    margin: 0;
+}
+
+.side-cart .itemDesc{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem
+}
+
+.side-cart .itemDesc .subImg #subImg{
+    width: 100%;
+}
+
+.side-cart .subTotal, .checkout{
+    width: 80%;
+    padding: 1rem;
+    background-color: rgb(0,43,92);
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.side-cart .imgDesc .desc{
+    margin-bottom: 1rem;
+}
+
+.side-cart .checkout:hover{
+    cursor: pointer;
+    border: black solid;
+}
+
+.side-cart .checkout a{
+    text-decoration: none;
+    color: white;
+}
+
+.myPhoto{
+    height: 614px;
+    overflow: hidden;
+}
+
+
+
+
+
+
